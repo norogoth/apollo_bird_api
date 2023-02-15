@@ -11,6 +11,7 @@ const Schema = gql`
         getAllBirds: [Bird]
         getBird(id: Int): Bird
         getBirdsByDiet(diet: String): [Bird]
+        getAllDiets: [String]
     }
 `
 export default Schema;
