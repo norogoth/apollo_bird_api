@@ -1,7 +1,10 @@
-import birds from "./dataset"; //get all of the available data from our database.
+//import {birds, climates} from "./dataset"; //get all of the available data from our database.
+import { Bird, Climate, TemperatureRange, getBirds } from "./Models";
+
 const Resolvers = {
     Query: {
-        getAllBirds: () => birds,
+        getAllBirds: () => getBirds(),
+        /*
         getBird: (_: any, args: any) => { 
             console.log(args);
             //get the bird object that contains the specified ID.
@@ -22,6 +25,7 @@ const Resolvers = {
             });
             return diets;
         },
+        */
     },
 };
 export default Resolvers;

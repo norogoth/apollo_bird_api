@@ -6,6 +6,16 @@ const Schema = gql`
         name: String
         note: String
         diet: [String]
+        climate: Climate
+    }
+    type Climate {
+        id: ID!
+        name: String
+        TemperatureRange: TemperatureRange
+    }
+    type TemperatureRange {
+        min: Float
+        max: Float
     }
     type Query {
         getAllBirds: [Bird]
