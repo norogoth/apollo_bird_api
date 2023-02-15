@@ -11,7 +11,7 @@ const Schema = gql`
     type Climate {
         id: ID!
         name: String
-        TemperatureRange: TemperatureRange
+        temperatureRange: TemperatureRange
     }
     type TemperatureRange {
         min: Float
